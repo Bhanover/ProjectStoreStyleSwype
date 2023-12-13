@@ -1,7 +1,6 @@
-package com.StoreStyleSwype.BackendStoreStyleSwype.service;
+package com.StoreStyleSwype.BackendStoreStyleSwype.security.service;
 
 import com.StoreStyleSwype.BackendStoreStyleSwype.models.User;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,6 +10,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 // La clase UserDetailsImpl es una implementación personalizada de la interfaz UserDetails de Spring Security.
 public class UserDetailsImpl implements UserDetails {
+    private static final long serialVersionUID = 1L;
+
     // Propiedades básicas del usuario
     private Long id;
     private String username;
